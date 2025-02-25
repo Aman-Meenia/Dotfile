@@ -31,6 +31,10 @@ alias cd="z"
 # neofetch
 # neofetch
 
+# fastfetch (Neofetch Alternative)
+fastfetch
+
+
 # starship
 eval "$(starship init zsh)"
 
