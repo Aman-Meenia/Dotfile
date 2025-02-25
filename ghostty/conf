@@ -1,0 +1,89 @@
+#quick-terminal-animation-duration = 0.001
+#keybind = ctrl+s>t=toggle_quick_terminal
+copy-on-select = clipboard
+scrollback-limit = 100000
+# theme = Monokai Soda
+font-family = Jetbrains Mono
+# font-family = MesloLGS Nerd Font Mono
+theme = catppuccin-mocha
+# theme = GruvboxDarkHard
+ font-size = 17
+# font-family = Meslo LGS Nerd Font Mono
+# font-family = CaskaydiaCove Nerd Font
+# font-family = CaskaydiaCove NFM
+ # font-family = 'MesloLGS Nerd Font Mono'
+title="Ghostty Aman"
+# gtk-titlebar = false
+# window-decoration = false
+confirm-close-surface  = false
+mouse-hide-while-typing = true
+#mouse-scroll-multiplier = 2
+adjust-cell-height = 1%
+
+macos-auto-secure-input = false
+macos-secure-input-indication = false
+
+cursor-style = block
+
+#quick-terminal-animation-duration = 0
+window-padding-balance=true
+
+
+macos-titlebar-style = hidden
+shell-integration-features = no-cursor,sudo,no-title
+
+
+window-save-state = always
+window-colorspace = "display-p3"
+
+
+# background-opacity = 0.9
+# background-blur-radius = 90
+
+# macos-titlebar-style = hidden
+
+# window-padding-x = 4,2
+# window-padding-y = 6,0
+# command = zsh --login -c "if command -v tmux >/dev/null 2>&1; then tmux has-session -t Aman 2>/dev/null && tmux attach -t Aman || tmux new-session -s Aman; else zsh; fi; exec zsh"
+
+
+# keybindings
+keybind = ctrl+s>r=reload_config
+keybind = ctrl+s>x=close_surface
+keybind = ctrl+s>i=inspector:toggle
+
+
+keybind = ctrl+s>n=new_window
+
+# tabs 
+keybind = ctrl+s>c=new_tab
+keybind = ctrl+s>shift+l=next_tab
+keybind = ctrl+s>shift+h=previous_tab
+keybind = ctrl+s>comma=move_tab:-1
+keybind = ctrl+s>period=move_tab:1
+
+# quick tab switch
+keybind = ctrl+s>1=goto_tab:1
+keybind = ctrl+s>2=goto_tab:2
+keybind = ctrl+s>3=goto_tab:3
+keybind = ctrl+s>4=goto_tab:4
+keybind = ctrl+s>5=goto_tab:5
+keybind = ctrl+s>6=goto_tab:6
+keybind = ctrl+s>7=goto_tab:7
+keybind = ctrl+s>8=goto_tab:8
+keybind = ctrl+s>9=goto_tab:9
+
+# split
+keybind = ctrl+s>\=new_split:right
+keybind = ctrl+s>-=new_split:down
+
+keybind = ctrl+s>j=goto_split:bottom
+keybind = ctrl+s>k=goto_split:top
+keybind = ctrl+s>h=goto_split:left
+keybind = ctrl+s>l=goto_split:right
+
+keybind = ctrl+s>m=toggle_split_zoom
+
+keybind = ctrl+s>e=equalize_splits
+
+keybind = cmd+k=clear_screen
