@@ -1,4 +1,3 @@
-
 # history setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=10000
@@ -15,8 +14,6 @@ setopt hist_verify
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
-
 # Fuzzy finder 
 eval "$(fzf --zsh)"
 
@@ -25,15 +22,8 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 
 
-
-
-
-# neofetch
-# neofetch
-
 # fastfetch (Neofetch Alternative)
-fastfetch
-
+# fastfetch
 
 # starship
 eval "$(starship init zsh)"
@@ -69,6 +59,7 @@ alias tn="tmux new -s"
 alias tk="tmux kill-session -t"
 alias f='yazi'
 alias pn='pnpm'
+alias ff='fastfetch'
 
 
 
@@ -106,7 +97,7 @@ run() {
 #     tmux attach -t default || tmux new -s default
 # fi
 
-
+#
 # bun completions
 [ -s "/Users/aman/.bun/_bun" ] && source "/Users/aman/.bun/_bun"
 
@@ -140,3 +131,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Added by Windsurf
 export PATH="/Users/aman/.codeium/windsurf/bin:$PATH"
+
+
+# Nvm
+source $(brew --prefix nvm)/nvm.sh
+
